@@ -6,17 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lerntools</title>
 <style>
-  :root { --bg: #E6EDF2; --surface: #FFFFFF; --ink: #14243B; --muted: #4F6077; --line: #C5D1DC; --accent: #0B6E78; --stage: #1B222B; --stage-ink: #F2F5F8; --note: #FFF6DD; --note-line: #E3C878;
+  :root { --bg: #E6EDF2; --surface: #FFFFFF; --ink: #14243B; --muted: #4F6077; --line: #C5D1DC; --accent: #0B6E78; --stage: #1B222B; --stage-ink: #F2F5F8;
     --display: "Trebuchet MS", "Avenir Next", "Segoe UI", Roboto, sans-serif; --body: "Avenir Next", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #0F1823; --surface: #1A2635; --ink: #E9EFF6; --muted: #A3B4C7; --line: #33455A; --accent: #58C7CF; --note: #2A2618; --note-line: #6B5A2A; color-scheme: dark; } }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0F1823; --surface: #1A2635; --ink: #E9EFF6; --muted: #A3B4C7; --line: #33455A; --accent: #58C7CF; color-scheme: dark; } }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.5;
     padding: 32px max(16px, env(safe-area-inset-right)) 32px max(16px, env(safe-area-inset-left)); }
   main { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
   h1 { font-family: var(--display); font-size: 2rem; line-height: 1.1; margin: 0; }
   .unter { margin: 4px 0 0; color: var(--muted); }
-  .hinweis { background: var(--note); border: 1px solid var(--note-line); border-radius: 16px; padding: 14px 22px; }
-  .hinweis p { margin: 0; }
+  .hinweis { margin: 0; padding-left: 12px; border-left: 3px solid var(--line); color: var(--muted); font-size: 0.9rem; }
   .modul { display: block; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
   .modul:hover, .modul:focus-visible { border-color: var(--accent); outline: none; }
   .bild { background: var(--stage); color: var(--stage-ink); padding: 22px 22px 18px; font-family: var(--display); font-size: 1.5rem; font-weight: 700; }
@@ -40,9 +39,7 @@
     <h1>Lerntools</h1>
     <p class="unter">Kostenlose Übungs- und Lernangebote für die Schule. Alles läuft im Browser, ohne Anmeldung.</p>
   </header>
-  <div class="hinweis" role="note">
-    <p><b>Test- und Betaversionen:</b> Alle Lerntools befinden sich noch in der Erprobung. Die Inhalte wurden sorgfältig erstellt und geprüft, trotzdem wird keine Garantie für ihre Richtigkeit und Vollständigkeit übernommen.</p>
-  </div>
+  <p class="hinweis"><b>Test- und Betaversionen.</b> Ziel ist nicht, perfekte und vollständig einsatzbereite Tools für den Unterricht bereitzustellen. Die Lerntools sollen ausloten, welche Möglichkeiten Vibe-Coding (Programmieren mit Unterstützung einer KI) für Unterrichtszwecke bietet. Die Inhalte wurden sorgfältig geprüft, für ihre Richtigkeit wird trotzdem keine Garantie übernommen.</p>
   <a class="modul" href="https://seno1290.github.io/mathe-uebungsplatz/">
     <div class="bild"><small>Mathematik, Klasse 5 und 6 · Testversion</small>Mathe-Übungsplatz</div>
     <div class="text">
