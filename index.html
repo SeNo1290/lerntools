@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lerntools</title>
+<style>
+  :root { --ink: #1d3f8f; --paper: #fbfcfe; --grid: #dbe4f3; --text: #1f2933; --muted: #5b6676; --card: #ffffff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--text); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--paper);
+    background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px; }
+  header { background: var(--ink); color: #fff; padding: 28px 16px; }
+  header .inner, main, footer { max-width: 760px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 2rem; }
+  header p { margin: 6px 0 0; opacity: .9; }
+  main { padding: 24px 16px; display: grid; gap: 16px; }
+  .tool { display: block; background: var(--card); border: 1px solid var(--grid); border-left: 6px solid var(--ink); border-radius: 10px; padding: 18px 20px; text-decoration: none; color: inherit; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+  .tool:hover, .tool:focus-visible { border-color: var(--ink); outline: none; }
+  .tool h2 { margin: 0 0 4px; font-size: 1.25rem; color: var(--ink); }
+  .tool .for { font-size: .9rem; color: var(--muted); margin: 0 0 6px; }
+  .tool p { margin: 0; }
+  .tool .go { display: inline-block; margin-top: 10px; font-weight: 600; color: var(--ink); }
+  footer { padding: 8px 16px 32px; font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="inner"><h1>Lerntools</h1><p>Kostenlose Übungs- und Lernangebote für die Schule. Alles läuft im Browser, ohne Anmeldung.</p></div></header>
+<main>
+  <a class="tool" href="https://seno1290.github.io/mathe-uebungsplatz/">
+    <h2>Mathe-Übungsplatz</h2>
+    <p class="for">Mathematik, Klasse 5 und 6</p>
+    <p>Aufgaben im Heft rechnen, das Ergebnis Ziffer für Ziffer im Kästchenraster eintragen, mit Tipps und Lösungsweg. Am Ende gibt es einen Bericht für die Lehrkraft und einen für dich.</p>
+    <span class="go">Öffnen →</span>
+  </a>
+  <a class="tool" href="https://seno1290.github.io/mbi-lernmodule/">
+    <h2>MBI-Lernmodule</h2>
+    <p class="for">Medienbildung und Informatik, Klasse 5 und 6</p>
+    <p>Lernmodule zum Entdecken, zum Beispiel „Hardware: Die Bauteile im Gehäuse“.</p>
+    <span class="go">Öffnen →</span>
+  </a>
+</main>
+<footer>[Impressum folgt]</footer>
+</body>
+</html>
