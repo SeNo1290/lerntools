@@ -6,44 +6,58 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Impressum · Lerntools</title>
 <style>
-  :root { --ink: #1d3f8f; --paper: #fbfcfe; --grid: #dbe4f3; --text: #1f2933; --muted: #5b6676; --card: #ffffff; }
+  :root { --bg: #E6EDF2; --surface: #FFFFFF; --ink: #14243B; --muted: #4F6077; --line: #C5D1DC; --accent: #0B6E78; --stage: #1B222B; --stage-ink: #F2F5F8; --note: #FFF6DD; --note-line: #E3C878;
+    --display: "Trebuchet MS", "Avenir Next", "Segoe UI", Roboto, sans-serif; --body: "Avenir Next", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0F1823; --surface: #1A2635; --ink: #E9EFF6; --muted: #A3B4C7; --line: #33455A; --accent: #58C7CF; --note: #2A2618; --note-line: #6B5A2A; color-scheme: dark; } }
   * { box-sizing: border-box; }
-  body { margin: 0; color: var(--text); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    background-color: var(--paper);
-    background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-    background-size: 24px 24px; }
-  header { background: var(--ink); color: #fff; padding: 28px 16px; }
-  header .inner, main, footer { max-width: 760px; margin: 0 auto; }
-  h1 { margin: 0; font-size: 2rem; }
-  header p { margin: 6px 0 0; opacity: .9; }
-  main { padding: 24px 16px; display: grid; gap: 16px; }
-  .tool { display: block; background: var(--card); border: 1px solid var(--grid); border-left: 6px solid var(--ink); border-radius: 10px; padding: 18px 20px; text-decoration: none; color: inherit; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
-  .tool:hover, .tool:focus-visible { border-color: var(--ink); outline: none; }
-  .tool h2 { margin: 0 0 4px; font-size: 1.25rem; color: var(--ink); }
-  .tool .for { font-size: .9rem; color: var(--muted); margin: 0 0 6px; }
-  .tool p { margin: 0; }
-  .tool .go { display: inline-block; margin-top: 10px; font-weight: 600; color: var(--ink); }
-  footer { padding: 8px 16px 32px; font-size: .9rem; color: var(--muted); }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.5;
+    padding: 32px max(16px, env(safe-area-inset-right)) 32px max(16px, env(safe-area-inset-left)); }
+  main { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+  h1 { font-family: var(--display); font-size: 2rem; line-height: 1.1; margin: 0; }
+  .unter { margin: 4px 0 0; color: var(--muted); }
+  .hinweis { background: var(--note); border: 1px solid var(--note-line); border-radius: 16px; padding: 14px 22px; }
+  .hinweis p { margin: 0; }
+  .modul { display: block; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .modul:hover, .modul:focus-visible { border-color: var(--accent); outline: none; }
+  .bild { background: var(--stage); color: var(--stage-ink); padding: 22px 22px 18px; font-family: var(--display); font-size: 1.5rem; font-weight: 700; }
+  .bild small { display: block; font-family: var(--body); font-size: 0.85rem; font-weight: 600; opacity: 0.75; }
+  .text { padding: 14px 22px 18px; }
+  .text p { margin: 0; }
+  .los { margin-top: 10px !important; font-weight: 700; color: var(--accent); }
+  .karte { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 22px; }
+  .karte h2 { font-family: var(--display); font-size: 1.25rem; margin: 0 0 8px; }
+  .karte p { margin: 0 0 10px; }
+  .karte p:last-child { margin-bottom: 0; }
+  .karte a { color: var(--accent); }
+  footer { font-size: 0.9rem; }
+  footer a { color: var(--muted); font-weight: 600; text-underline-offset: 3px; }
+  footer a:hover { color: var(--ink); }
 </style>
-<style>.text { background: var(--card); border: 1px solid var(--grid); border-radius: 10px; padding: 18px 20px; } .text h2 { color: var(--ink); font-size: 1.2rem; margin: 0 0 8px; } .text p { margin: 0 0 10px; } a { color: var(--ink); }</style>
 </head>
 <body>
-<header><div class="inner"><h1>Impressum</h1><p>Lerntools</p></div></header>
 <main>
-  <section class="text">
+  <header>
+    <h1>Impressum</h1>
+    <p class="unter">Lerntools</p>
+  </header>
+  <section class="karte">
     <h2>Impressum</h2>
     <p><b>Urheber und verantwortlich</b><br>S. Noll<br>E-Mail: <a href="mailto:sebastian.noll@schule.thueringen.de">sebastian.noll@schule.thueringen.de</a></p>
     <p><b>Rechte</b><br>© 2026 S. Noll. Alle Rechte vorbehalten.</p>
     <p><b>Hinweis zur KI</b><br>Die Inhalte wurden mit Unterstützung der KI Claude (Anthropic) erstellt und von S. Noll geprüft und freigegeben.</p>
     <p>Die einzelnen Lerntools haben jeweils ein eigenes Impressum mit weiteren Angaben.</p>
   </section>
-  <section class="text">
+  <section class="karte">
+    <h2>Hinweis zu den Inhalten</h2>
+    <p>Alle Lerntools sind Test- beziehungsweise Betaversionen. Die Inhalte wurden sorgfältig erstellt und geprüft, trotzdem wird keine Garantie für ihre Richtigkeit, Vollständigkeit und Aktualität übernommen. Hinweise auf Fehler gern per E-Mail an die oben genannte Adresse.</p>
+  </section>
+  <section class="karte">
     <h2>Datenschutz</h2>
     <p>Diese Übersichtsseite speichert nichts, setzt keine Cookies und nutzt keine Werbe- oder Statistik-Dienste.</p>
     <p><b>Hosting bei GitHub Pages</b><br>Diese Seite wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc. (88 Colin P. Kelly Jr. St., San Francisco, CA, USA). Beim Aufruf verarbeitet GitHub technische Daten, die jeder Browser automatisch übermittelt, insbesondere die IP-Adresse, Datum und Uhrzeit des Abrufs sowie Angaben zu Browser und Gerät. Das ist nötig, um die Seite auszuliefern und den Dienst abzusichern. Rechtsgrundlage ist das berechtigte Interesse an einer sicheren und zuverlässigen Bereitstellung (Art. 6 Abs. 1 lit. f DSGVO). Dabei können Daten in die USA übertragen werden. GitHub stützt sich dafür nach eigenen Angaben auf das EU-U.S. Data Privacy Framework und auf Standardvertragsklauseln der EU-Kommission. Einzelheiten stehen in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von GitHub</a> (englisch).</p>
     <p><b>Verantwortlich und deine Rechte</b><br>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist S. Noll, E-Mail: <a href="mailto:sebastian.noll@schule.thueringen.de">sebastian.noll@schule.thueringen.de</a>. Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten, das Recht auf Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
   </section>
-  <p><a href="./">← Zurück zu den Lerntools</a></p>
+  <footer><a href="./">← Zurück zu den Lerntools</a></footer>
 </main>
 </body>
 </html>
